@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+:root {
+  --blue-color: #5258d2;
+  --pink-color: #de2b79;
+  --purple-color: #992dbf;
+  --yellow-color: #fed166;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 6px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 64rem;
+  height: 64rem;
+  background:
+    radial-gradient(circle farthest-corner at 35% 90%, var(--yellow-color), transparent 50%),
+    radial-gradient(circle farthest-corner at 0 140%, var(--yellow-color), transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, var(--blue-color), transparent 25%),
+    radial-gradient(ellipse farthest-corner at 0 -100%, var(--blue-color), transparent 60%),
+    radial-gradient(ellipse farthest-corner at 100% 0, var(--purple-color), transparent 25%),
+    radial-gradient(ellipse farthest-corner at 60% -20%, var(--purple-color), transparent 25%),
+    radial-gradient(ellipse farthest-corner at 100% 100%, var(--pink-color), transparent),
+    linear-gradient(var(--blue-color), var(--purple-color), var(--pink-color), var(--yellow-color));
+  border-radius: 20%;
+}
+
+.camera {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48rem;
+  height: 48rem;
+  background-color: transparent;
+  border: 4rem solid #fff;
+  border-radius: 25%;
+}
+
+.camera:before {
+  content: "";
+  width: 16rem;
+  height: 16rem;
+  background-color: transparent;
+  border: 4rem solid #fff;
+  border-radius: 100%;
+}
+
+.camera:after {
+  content: "";
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: #fff;
+  border-radius: 100%;
+}
