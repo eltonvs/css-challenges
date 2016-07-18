@@ -7,12 +7,14 @@
   --yellow-color: #fed166;
 }
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
 html {
-  font-size: 6px;
+  font-size: 24px;
 }
 
 body {
@@ -28,8 +30,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 64rem;
-  height: 64rem;
+  width: 16rem;
+  height: 16rem;
   background:
     radial-gradient(ellipse at 35% bottom, var(--yellow-color), transparent 50%),
     radial-gradient(ellipse at left -100%, var(--blue-color), transparent 60%),
@@ -45,29 +47,29 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 48rem;
-  height: 48rem;
+  width: 12rem;
+  height: 12rem;
   background-color: transparent;
-  border: 4rem solid #fff;
+  border: 1rem solid #fff;
   border-radius: 25%;
 }
 
-.camera:before {
+.camera::before {
   content: "";
-  width: 16rem;
-  height: 16rem;
+  width: 6rem;
+  height: 6rem;
   background-color: transparent;
-  border: 4rem solid #fff;
+  border: 1rem solid #fff;
   border-radius: 100%;
 }
 
-.camera:after {
+.camera::after {
   content: "";
   position: absolute;
-  top: 4rem;
-  right: 4rem;
-  width: 6rem;
-  height: 6rem;
+  top: 1rem;
+  right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: #fff;
   border-radius: 100%;
 }
